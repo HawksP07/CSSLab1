@@ -1,0 +1,54 @@
+/* A simple css stylesheet for the current open page */
+
+/* Use a dark and simple color palette */
+body {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /* Make the navbar horizontal and align it to the center */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add some style to the navbar links */
+  .navbar li {
+    margin: 10px;
+    display: inline;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  /* Add some hover effect to the navbar links */
+  .navbar a:hover {
+    color: #cccccc;
+  }
+  
+  /* Add some style to the headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Add some style to the paragraphs */
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Add some style to the footer */
+  footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
