@@ -6,31 +6,33 @@ body {
     color: #ffffff;
   }
   
-  /* Make the navbar horizontal and align it to the center */
+  /* /* Make the navbar horizontal and align it to the center */
   .navbar {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    color: #000000;
   }
   
   /* Add some style to the navbar links */
-  .navbar li {
+   .navbar li {
     margin: 10px;
-    display: inline;
-  }
+     display: inline; 
+   } 
   
   .navbar a {
     text-decoration: none;
-    color: #ffffff;
-  }
+    color: #000000; 
+    /* display:inline; */
+  } 
   
   /* Add some hover effect to the navbar links */
   .navbar a:hover {
-    color: #cccccc;
-  }
+    color: #00ff0d;
+  } 
   
   /* Add some style to the headings */
   h1, h2, h3, h4, h5, h6 {
