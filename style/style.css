@@ -2,8 +2,10 @@
 
 /* Use a dark and simple color palette */
 body {
-    background-color: #333333;
-    color: #ffffff;
+    background-image: url('../images/programming.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
   }
   
   /* /* Make the navbar horizontal and align it to the center */
@@ -33,4 +35,19 @@ body {
   .navbar a:hover {
     color: #00ff0d;
   } 
+
+  body footer p {
+    color: #000000;
+    position:absolute;
+    align-items: center;
+    bottom:0;
+    right:50%;
+  }
+
+  body h1 {
+    color:#000000;
+  }
+  body p {
+    color:#000000;
+  }
   
