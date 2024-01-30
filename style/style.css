@@ -14,7 +14,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #000000;
+    background-color: #000000;
   }
   
   /* Add some style to the navbar links */
@@ -25,7 +25,7 @@ body {
   
   .navbar a {
     text-decoration: none;
-    color: #000000; 
+    color: #ffffff; 
     /* display:inline; */
   } 
   
@@ -34,23 +34,3 @@ body {
     color: #00ff0d;
   } 
   
-  /* Add some style to the headings */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-  }
-  
-  /* Add some style to the paragraphs */
-  p {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  /* Add some style to the footer */
-  footer {
-    background-color: #222222;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-  }
