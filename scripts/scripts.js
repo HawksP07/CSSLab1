@@ -9,5 +9,5 @@ function handleFormSubmit(){
     console.log(phone.value);
     console.log(email.value);
     console.log(message.value);
-    location.replace("index.html");
+    location.replace("./index.html");
 }
