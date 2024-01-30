@@ -9,5 +9,13 @@ function handleFormSubmit(){
     console.log(phone.value);
     console.log(email.value);
     console.log(message.value);
-    window.location.href="index.html";
+
+    setTimeout(changePage, 3000);
+
+    return false;
+
+}
+
+function changePage(){
+    window.location.replace("index.html");
 }
