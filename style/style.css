@@ -1,11 +1,10 @@
 /* A simple css stylesheet for the current open page */
 
 /* Use a dark and simple color palette */
-body {
+.index {
     background-image: url('../images/programming.png');
     background-repeat: no-repeat;
     background-size: cover;
-    color: #000000;
   }
   
   /* /* Make the navbar horizontal and align it to the center */
