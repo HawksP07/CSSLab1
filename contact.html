@@ -43,10 +43,61 @@
 
   </head>
   <body>
-    <main>
-        <h1>Welcome to the main page of Lab 1, authored by Austin and Bernie.</h1>  
-        <p>Click the links in the navigation bar to learn more.</p>
-    </main>
+    <div class="container">
+        <h1 class="top-header" style="text-align: center">Registration Form</h1>
+        <form id="contact-form" name="contact-form" onsubmit="return handleFormSubmit()">
+            <p id="generalError"></p>
+            
+            <div class="form-group col-md-6">
+              <label for="nameInput">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                placeholder="Name"
+              />
+              <!--<p id="usernameError"></p>-->
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputPhone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="Phone Number"
+                />
+                <!--<p id="phoneError"></p>-->
+              </div>
+      
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Email"
+              />
+              <!--<p id="emailError"></p>-->
+            </div>
+      
+            <div class="form-group col-md-6">
+              <label for="inputMessage">Message</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputMessage"
+                placeholder="Message"
+              />
+              <p id="passwordError"></p>
+            </div>
+      
+            <div class="form-group">
+              <input id="submit-reg-form" type="submit" value="Send" name="Submit" class="btn btn-primary" onclick="replaceForm()"/>
+              <input type="reset" value="Reset" name="Reset" class="btn btn-outline-primary" />
+            </div>
+        </form>
+    </div>
     <footer><p>Austin Pyzer © 2024 Bernie Warren © 2024</p></footer>
 	<script src="scripts/scripts.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
