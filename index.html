@@ -6,40 +6,49 @@
     <meta description="Lab 1 submission page." author="Austin and Bernie">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>INFT-2202-04 CSS Lab 1 - Austin, Bernie</title>
-    <link rel="stylesheet" href="style/style.css">
 
-    <!-- Navbar boostrap taken from getbootstrap.com and edited by Bernie -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap nav bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">INFT-2202-04</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
+              <a class="nav-link" href="projects.html">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="contactus.html">Contact Us</a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
   </head>
-  <body>
+  <body class="index">
     <main>
-        <h1>Welcome to Lab 1 of INFT-2202-04</h1>  
+        <h1>Welcome to the main page of Lab 1, authored by Austin and Bernie.</h1>  
+        <p>Click the links in the navigation bar to learn more.</p>
     </main>
+    <footer><p>Austin Pyzer © 2024 Bernie Warren © 2024</p></footer>
 	<script src="scripts/scripts.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
