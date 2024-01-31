@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Lab 1 submission page." author="Austin and Bernie">
+    <meta description="Lab 1 Projects." author="Austin and Bernie">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>INFT-2202-04 CSS Lab 1 - Austin, Bernie</title>
-
+    <title>About Us</title>
+    <!-- Script Link -->
+    <script src="./scripts/scripts.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Stylesheet link -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <!-- Bootstrap CSS link -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
     <!-- Bootstrap nav bar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
@@ -34,21 +36,30 @@
               <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-  </head>
   <body>
     <main>
-        <h1>Welcome to the main page of Lab 1, authored by Austin and Bernie.</h1>  
-        <p>Click the links in the navigation bar to learn more.</p>
+        <h1 id="about-header">A brief introduction to who we are behind the monitor</h1>  
+        <div class="proj-1">
+            <h3 id="name1-title">Bernie Warren</h3>
+            <p id="name1-description"> I am 24, returning to college for the second time after the culinary industry was murdered by COVID-19.
+                I live near Port Hope, with my partner and our daughter (5). My interests include games, nature, boxing, 
+                science, and history.
+            </p>
+            <img src="./images/bernie.jpg" alt="Image" class="aboutus-images">
+        </div>
+        <div class="proj-2">
+            <h3 id="name2-title">Austin Pyzer</h3>
+            <p id="name2-description"> Seems like a lovely guy!
+            </p>
+            <img src="./images/austin.jpg" alt="Image" class="aboutus-images">
     </main>
     <footer><p>Austin Pyzer © 2024 Bernie Warren © 2024</p></footer>
-	<script src="scripts/scripts.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

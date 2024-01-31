@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Lab 1 submission page." author="Austin and Bernie">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INFT-2202-04 CSS Lab 1 - Austin, Bernie</title>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+ </head>
+    <!-- Bootstrap nav bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">INFT-2202-04</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <body>
+    <div class="container">
+        <h1 class="top-header" style="text-align: center">Contact Form</h1>
+        <form id="contact-form" name="contact-form" onsubmit="return handleFormSubmit()">
+            <p id="generalError"></p>
+            
+            <div class="form-group col-md-6">
+              <label for="nameInput">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                placeholder="Name"
+              />
+              <!--<p id="usernameError"></p>-->
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputPhone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  placeholder="Phone Number"
+                />
+                <!--<p id="phoneError"></p>-->
+              </div>
+      
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Email"
+              />
+              <!--<p id="emailError"></p>-->
+            </div>
+      
+            <div class="form-group col-md-6">
+              <label for="inputMessage">Message</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputMessage"
+                placeholder="Message"
+              />
+              <p id="passwordError"></p>
+            </div>
+      
+            <div class="form-group">
+              <input id="submit-reg-form" type="submit" value="Send" name="Submit" class="btn btn-primary"/>
+              <input type="reset" value="Reset" name="Reset" class="btn btn-outline-primary" />
+            </div>
+        </form>
+    </div>
+    <footer><p>Austin Pyzer © 2024 Bernie Warren © 2024</p></footer>
+	<script src="./scripts/scripts.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

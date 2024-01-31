@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Lab 1 Projects." author="Austin and Bernie">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projects - Bernie and Austin</title>
-
+    <title>Projects - Austin and Bernie</title>
     <!-- Stylesheet link -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <!-- Bootstrap CSS link -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
     <!-- Bootstrap nav bar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
@@ -34,41 +33,45 @@
               <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
+
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-  </head>
   <body>
     <main>
-        
-        <h1>Our top 3 favorite Projects</h1>
-        <article>
-            <h3>1. Tic Tac Toe</h3>  
-            <p>In semester 1 we had the opportunity to make a TTT game using GUI with python.
-                The experience was extremely valuable for learning about event handling and 
-                in hindsight was a subtle introduction to OOP in the form of passing the same 
-                event object when any of the 9 buttons were pressed. 
+        <h1 id="proj-header">On this page, you will learn about our top 3 favorite projects.</h1>  
+        <div class="proj-1">
+            <h3 id="proj1-title">1. Tic Tac Toe - Semester 1</h3>
+            <p id="proj1-description">This project was an excellent introduction to event handling and GUI applications.
+                We used buttons to represent the tiles, and event handlers to record player info and positions.
+                Passing the source of the event to identify which button was clicked was a great way to learn about OOP.
             </p>
-        </article>
-        <article>
-            <h3>2.</h3>  
-            <p>
-                asdadwaadwdad
+            <img src="./images/tictactoe.png" alt="Image" class="proj-images">
+        </div>
+        <div class="proj-2">
+            <h3 id="proj2-title">2. Experimenting Report - Semester 3</h3>
+            <p id="proj2-description">This report required us to experiment with a C# technology that we had never used before.
+                Many students, including Bernie, chose to use Unity. The requirements of the report ensured that I not only
+                payed close attention to what I was learning, but also let me express my ability to self-learn.
             </p>
-        </article>
-        <article>
-            <h3>3.</h3>  
-            <p>
-                adsadsdasdadsad 
+            <img src="./images/unity.jpg" alt="Image" class="proj-images">
+        </div>
+        <div class="proj-3"> 
+            <h3 id="proj3-title">3. Deck Builder - Semester 3</h3>
+            <p id="proj3-description">A project that took an extremely solid understanding of OOP concepts to complete. We needed to create classes
+                representing cards, empty decks, pre-filled decks, and allow the user to create a custom deck by entering 
+                suits and numbers 1 at a time. This was where OOP concepts really sank in for me, and I understood how they could be used.
             </p>
-        </article>
+            <img src="./images/cards.png" alt="Image" class="proj-images">
+        </div>
     </main>
     <footer><p>Austin Pyzer © 2024 Bernie Warren © 2024</p></footer>
-	<script src="scripts/scripts.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Script Link -->
+     <script src="./scripts/scripts.js"></script>
+     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
