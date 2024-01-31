@@ -1,7 +1,7 @@
 /* A simple css stylesheet for the current open page */
 
 /* Use a dark and simple color palette */
-body {
+body.index {
     background-image: url('../images/programming.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,5 +49,15 @@ body {
   }
   body p {
     color:#000000;
+  }
+
+  .proj-images {
+    width: 100px;
+    height:auto;
+  }
+
+  .aboutus-images {
+    width:200px;
+    height:auto;
   }
   
