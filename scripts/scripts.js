@@ -4,6 +4,13 @@ let phone = document.getElementById("inputPhone");
 let email = document.getElementById("inputEmail");
 let message = document.getElementById("inputMessage");
 
+/**
+ * This runs when the form is submitted
+ * Will log all values to the console
+ * Then pause for 3 seconds
+ * Then reurn to the index page
+ * @returns 
+ */
 function handleFormSubmit(){
     console.log(username.value);
     console.log(phone.value);
@@ -16,6 +23,9 @@ function handleFormSubmit(){
 
 }
 
+/**
+ * Used to return to the index page in the previous function
+ */
 function changePage(){
     window.location.replace("index.html");
 }
@@ -117,11 +127,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+// Create a new element for HR link
 const humanResourceLink = document.createElement('li');
+// Add the nav-item class to it
 humanResourceLink.classList.add('nav-item');
+// Write the HTML to add it
 humanResourceLink.innerHTML = '<a class="nav-link" href="#">Human Resources</a>';
+// Insert the HTML in the proper spot
 document.querySelector('.navbar-nav').insertBefore(humanResourceLink, document.querySelector('.navbar-nav').children[4]);
 
+// Create the navbar at the bottom the same way the HR link was made
 const fixedNavbar = document.createElement('nav');
 fixedNavbar.classList.add('navbar', 'navbar-light', 'bg-light', 'fixed-bottom');
 fixedNavbar.innerHTML = `
@@ -130,41 +145,3 @@ fixedNavbar.innerHTML = `
 </div>
 `;
 document.body.appendChild(fixedNavbar);
-
-// ================================================================================
-// Text insertion completed/
-
-// Add a new tab to the navbar between "About us" and "Contact us"
-// USING SAME LOGIC AS CHANGING PRODUCTS TO PROJECTS
-// Check that the DOM is loaded
-// window.onload = function() {
-//     // Collect the navbar contents in an array
-//     let navbarItems = Array.from(document.getElementsByClassName("nav-link"));
-//     navbarItems.forEach((item, index) => {
-//         // As we iterate, check if the content is products and change it.
-//         if(item.textContent === "About Us") {
-
-//             // Get the parent element 
-//             let ulElement = item.parentElement.parentElement;
-
-//             // Create new list item 
-//             let newLi = document.createElement("li");
-//             // Add new li to the nav-item class
-//             newLi.className = "nav-item";
-
-//             // Create a new anchor link element
-//             let newLink = document.createElement("a");
-//             // Add it to the navlink class
-//             newLink.className = "nav-link";
-//             // set the parameters of the link 
-//             newLink.href = "index.html";                // NOTE linking back to home because human resources.html is not a requirement
-//             newLink.textContent = "Human Resources";
-
-//             // Append the link into the list item
-//             newLi.appendChild(newLink);
-//             // Position the new Li between about us and contact us.
-//             ulElement.insertBefore(newLi, navbarItems[index+1].parentElement);
-
-//         }
-//     });
-// };
