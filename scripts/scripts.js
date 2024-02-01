@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 and our daughter (5). My interests include games, nature, boxing, science, and history.`;
 
         name2Title.textContent = "Austin Pyzer";
-        name2Desc.textContent = "***********";
+        name2Desc.textContent = 'I am 19 and went straight to college after high school. I have plans to finish my studies at DC, and eventually head to University to achieve a Masters in Computer Science. My primary past-time includes gaming and music, aswell as expanding my knowledge of programming as a whole.';
     }
 });
 
