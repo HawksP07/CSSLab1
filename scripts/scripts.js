@@ -116,6 +116,12 @@ document.addEventListener("DOMContentLoaded", function() {
         name2Desc.textContent = "***********";
     }
 });
+
+const humanResourceLink = document.createElement('li');
+humanResourceLink.classList.add('nav-item');
+humanResourceLink.innerHTML = '<a class="nav-link" href="#">Human Resources</a>';
+document.querySelector('.navbar-nav').insertBefore(humanResourceLink, document.querySelector('.navbar-nav').children[4]);
+
 // ================================================================================
 // Text insertion completed/
 
