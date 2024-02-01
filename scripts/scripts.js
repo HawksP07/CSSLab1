@@ -122,6 +122,15 @@ humanResourceLink.classList.add('nav-item');
 humanResourceLink.innerHTML = '<a class="nav-link" href="#">Human Resources</a>';
 document.querySelector('.navbar-nav').insertBefore(humanResourceLink, document.querySelector('.navbar-nav').children[4]);
 
+const fixedNavbar = document.createElement('nav');
+fixedNavbar.classList.add('navbar', 'navbar-light', 'bg-light', 'fixed-bottom');
+fixedNavbar.innerHTML = `
+<div class="container-fluid">
+  <span class="navbar-text mx-auto">&copy; ${new Date().getFullYear()} Austin Pyzer. &copy; ${new Date().getFullYear()} Bernie Warren</span>
+</div>
+`;
+document.body.appendChild(fixedNavbar);
+
 // ================================================================================
 // Text insertion completed/
 
