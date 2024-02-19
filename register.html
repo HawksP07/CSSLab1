@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Lab 1 submission page." author="Austin and Bernie">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home - Austin and Bernie</title>
+    <title>Login - Lab 2</title>
 
     <!-- Stylesheet link -->
     <link rel="stylesheet" href="./style/style.css">
@@ -46,10 +46,67 @@
         </div>
       </div>
     </nav>
-  <body class="index">
+  <body class="login">
     <main>
-        <h1 id="main-header">Welcome to the main page of Lab 1, authored by Austin and Bernie.</h1>  
-        <p id="main-description">Click the links in the navigation bar to learn more.</p>
+        <h1 id="main-header">Enter your details to register for our site.</h1>  
+        <form id="register-form" name="register-form" onsubmit="">
+            <p id="generalError"></p>
+            
+            <div class="name-register">
+              <label for="firstNameInput">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstNameInput"
+                placeholder="John/Jane"
+              />
+            </div>
+
+            <div class="name-register">
+                <label for="lastNameInput">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastNameInput"
+                  placeholder="Doe"
+                />
+            </div>
+            <p id="nameError"></p>
+            <div class="register">
+                <label for="emailInput">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="example@site.com"
+                />
+                <p id="emailError"></p>
+            </div>
+
+            <div class="register">
+                <label for="passwordInput">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passwordInput"
+                  placeholder="********"
+                />
+            </div>
+
+            <div class="register">
+                <label for="confirmInput">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmInput"
+                  placeholder="********"
+                />
+            </div>
+      
+            <div class="form-group">
+              <input id="submit-reg-form" type="submit" value="Login" name="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
     </main>
 	<script src="./scripts/scripts.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -60,4 +60,15 @@ body.index {
     width:200px;
     height:auto;
   }
+
+  .name-register {
+    display:inline-block;
+    margin-right: 10px;
+  }
+  .form-group {
+    clear:both;
+  }
+  .register {
+    width: 410px;
+  }
   

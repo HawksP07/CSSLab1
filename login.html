@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Lab 1 submission page." author="Austin and Bernie">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home - Austin and Bernie</title>
+    <title>Login - Lab 2</title>
 
     <!-- Stylesheet link -->
     <link rel="stylesheet" href="./style/style.css">
@@ -46,10 +46,40 @@
         </div>
       </div>
     </nav>
-  <body class="index">
+  <body class="login">
     <main>
-        <h1 id="main-header">Welcome to the main page of Lab 1, authored by Austin and Bernie.</h1>  
-        <p id="main-description">Click the links in the navigation bar to learn more.</p>
+        <h1 id="main-header">Enter your details to log in.</h1>  
+        <form id="login-form" name="login-form" onsubmit="">
+            <p id="generalError"></p>
+            
+            <div class="form-group col-md-6">
+              <label for="nameInput">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                placeholder="Enter your username"
+              />
+              <p id="usernameError"></p>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputPass">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPass"
+                  placeholder="Enter your password"
+                />
+                <p id="passwordError"></p>
+            </div>
+              <p id="passwordError"></p>
+            </div>
+      
+            <div class="form-group">
+              <input id="submit-reg-form" type="submit" value="Login" name="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
     </main>
 	<script src="./scripts/scripts.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
