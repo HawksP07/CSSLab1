@@ -164,7 +164,7 @@ if ($("#submit-reg-form")) {
     let minLength = 2;
     let minEmail = 8;
     let minPassword = 6;
-    let isValid = false;
+    let isValid = 0;
 
     $("#submit-reg-form").click(function(e){
         errorMessageDiv.text("");
@@ -173,34 +173,34 @@ if ($("#submit-reg-form")) {
 
         if($("#firstNameInput").val().length < minLength){
             displayErrorMessage('First Name should be at least ' + minLength + ' characters. </br>');
-            isValid = false;
         }
         else{
-            isValid = true;
+            isValid++;
         }
 
         if($("#lastNameInput").val().length < minLength){
             displayErrorMessage('Last Name should be at least ' + minLength + ' characters. </br>');
-            isValid = false;
         }
         else{
-            isValid = true;
+            isValid++;
         }
 
         if($("#emailInput").val().length < minEmail || $("#emailInput").val().indexOf('@') === -1){
             displayErrorMessage('Email should be at least ' + minEmail + ' characters and contain "@" symbol. </br>');
-            isValid = false;
         }
         else{
-            isValid = true;
+            isValid++;
         }
 
         if($("#passwordInput").val() !== $("#confirmInput").val() || $("#passwordInput").val().length < minPassword){
             displayErrorMessage('Password should be at least ' + minPassword + ' characters must match the confirm password. </br>');
-            isValid = false;
         }
         else{
-            isValid = true;
+            isValid++;
+        }
+
+        if(isValid === 4){
+            hideErrorMessage();
         }
 
     });
