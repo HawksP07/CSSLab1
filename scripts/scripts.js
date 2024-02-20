@@ -145,3 +145,42 @@ fixedNavbar.innerHTML = `
 </div>
 `;
 document.body.appendChild(fixedNavbar);
+
+if ($("#submit-reg-form")) {
+
+    var errorMessageDiv = $('<div id="ErrorMessage"></div>').hide();
+    $('#register-form').prepend(errorMessageDiv);
+  
+    // Function to display error message in ErrorMessage div
+    function displayErrorMessage(message) {
+      errorMessageDiv.append(message).show();
+    }
+  
+    // Function to hide the ErrorMessage div
+    function hideErrorMessage() {
+      errorMessageDiv.hide();
+    }
+
+    var minLength = 2;
+    var minEmail = 8;
+
+    $("#submit-reg-form").click(function(e){
+        errorMessageDiv.text("");
+
+        e.preventDefault();
+
+        if($("#firstNameInput").val().length < minLength){
+            console.log("Test");
+            displayErrorMessage('First Name should be at least ' + minLength + ' characters. </br>');
+        }
+
+        if($("#lastNameInput").val().length < minLength){
+            displayErrorMessage('Last Name should be at least ' + minLength + ' characters. </br>');
+        }
+
+        if($("#emailInput").val().length < minEmail || $("#emailInput").val().indexOf('@') === -1){
+            displayErrorMessage('Email should be at least ' + minEmail + ' characters and contain "@" symbol.')
+        }
+
+    });
+}
