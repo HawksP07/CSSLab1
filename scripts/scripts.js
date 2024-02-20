@@ -163,6 +163,7 @@ if ($("#submit-reg-form")) {
 
     var minLength = 2;
     var minEmail = 8;
+    var isValid = false;
 
     $("#submit-reg-form").click(function(e){
         errorMessageDiv.text("");
@@ -170,16 +171,31 @@ if ($("#submit-reg-form")) {
         e.preventDefault();
 
         if($("#firstNameInput").val().length < minLength){
-            console.log("Test");
             displayErrorMessage('First Name should be at least ' + minLength + ' characters. </br>');
+            isValid = false;
+        }
+        else{
+            isValid = true;
         }
 
         if($("#lastNameInput").val().length < minLength){
             displayErrorMessage('Last Name should be at least ' + minLength + ' characters. </br>');
+            isValid = false;
+        }
+        else{
+            isValid = true;
         }
 
         if($("#emailInput").val().length < minEmail || $("#emailInput").val().indexOf('@') === -1){
-            displayErrorMessage('Email should be at least ' + minEmail + ' characters and contain "@" symbol.')
+            displayErrorMessage('Email should be at least ' + minEmail + ' characters and contain "@" symbol.');
+            isValid = false;
+        }
+        else{
+            isValid = true;
+        }
+
+        if(isValid){
+            hideErrorMessage();
         }
 
     });
