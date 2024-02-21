@@ -214,14 +214,14 @@ if ($("#submit-reg-form")) {
             hideErrorMessage();
             // Create a User object with the given details 
             let user = new User(
-                ("#firstNameInput").val(),
-                ("#lastNameInput").val(),
-                ("#emailInput").val(),
-                ("#passwordInput").val()
+                $("#firstNameInput").val(),
+                $("#lastNameInput").val(),
+                $("#emailInput").val(),
+                $("#passwordInput").val()
             );
             // Log the user in the console
             console.log(user);
-            
+
             // Clear the form 
             $("#firstNameInput").val("");
             $("#lastNameInput").val("");
@@ -231,4 +231,27 @@ if ($("#submit-reg-form")) {
         }
 
     });
+}
+
+$("#submit-log-form").click(function(ex) {
+    // Prevent default submission behaviour
+    ex.preventDefault();
+
+    // get the username input 
+    let username = $("#nameInput").val();
+
+    // Cal the insert username function
+    insertUserName(username);
+});
+
+// Function to insert the username to the navbar
+function insertUserName(username) {
+    // make a list item to hold the needed components 
+    let usernameItem = $("<li class='nav-item'><a class='nav-link'>" + username + "</a></li>");
+
+    // put the username before the login/logout link 
+    $(".nav-link:contains('Login Page')").parent().before(usernameItem);
+
+    // change the login text to logout 
+    $(".nav-link:contains('Login Page')").text("Logout");
 }
