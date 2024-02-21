@@ -23,6 +23,17 @@ function handleFormSubmit(){
 
 }
 
+// Create a JS User class 
+class User {
+    // Constructor function to add properties to the object
+    constructor (firstName, lastName, email, password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+    }
+}
+
 /**
  * Used to return to the index page in the previous function
  */
@@ -201,6 +212,22 @@ if ($("#submit-reg-form")) {
 
         if(isValid === 4){
             hideErrorMessage();
+            // Create a User object with the given details 
+            let user = new User(
+                ("#firstNameInput").val(),
+                ("#lastNameInput").val(),
+                ("#emailInput").val(),
+                ("#passwordInput").val()
+            );
+            // Log the user in the console
+            console.log(user);
+            
+            // Clear the form 
+            $("#firstNameInput").val("");
+            $("#lastNameInput").val("");
+            $("#emailInput").val("");
+            $("#passwordInput").val("");
+            $("#confirmInput").val("");
         }
 
     });
