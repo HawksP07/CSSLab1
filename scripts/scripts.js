@@ -177,7 +177,7 @@ if ($("#submit-reg-form")) {
     let minPassword = 6;
     let isValid = 0;
 
-    $("#submit-reg-form").click(function(e){
+    $("#submit-register-form").click(function(e){
         errorMessageDiv.text("");
 
         e.preventDefault();
